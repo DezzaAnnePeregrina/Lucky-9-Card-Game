@@ -42,7 +42,8 @@ header{
 .the__game{
     background-color: rgb(224, 241, 224);
     flex-wrap: wrap;
-    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .the__game button{
@@ -64,6 +65,12 @@ header{
         font-size: 60px;
         text-align: center;
     }
+    .the__game{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
 
 @media only screen and (max-width:450px){
@@ -87,5 +94,10 @@ header{
 
     .game__rules p{
         font-size: 15px;
+    }
+
+    #player1Card1, #player1Card2, #player2Card1, #player2Card2{
+        width: 130px;
+        height: 200px;
     }
 }

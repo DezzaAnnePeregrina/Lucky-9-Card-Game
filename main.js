@@ -36,16 +36,16 @@ function drawTwo(){
 
         if(player1val > player2val || player1val === 9){
           document.querySelector('h3').innerText = 'Player 1 wins'
-          document.querySelector('.score1').innerText = player1val
-          document.querySelector('.score2').innerText = player2val
+          document.querySelector('.score1').innerText = `Player 1 got ${player1val}`
+          document.querySelector('.score2').innerText = `Player 2 got ${player2val}`
         } else if(player1val < player2val || player2val === 9){
           document.querySelector('h3').innerText = 'Player 2 wins'
-          document.querySelector('.score1').innerText = player1val
-          document.querySelector('.score2').innerText = player2val
+          document.querySelector('.score1').innerText = `Player 1 got ${player1val}`
+          document.querySelector('.score2').innerText = `Player 2 got ${player2val}`
         } else{
           document.querySelector('h3').innerText = 'War!!!!!!'
-          document.querySelector('.score1').innerText = player1val
-          document.querySelector('.score2').innerText = player2val
+          document.querySelector('.score1').innerText = `Player 1 got ${player1val}`
+          document.querySelector('.score2').innerText = `Player 2 got ${player2val}`
         }
 
       })
