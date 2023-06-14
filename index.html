@@ -14,11 +14,11 @@
 	</head>
 	<body>
 		<header class="flex">
-			<div class="img__cont"><img src="" alt="UI photo"></div>
+			<div class="img__cont"><img src="/dylan-clifton-wFln-loyVxY-unsplash.jpg" alt="UI photo"></div>
 			
 			<div class="game flex">
-				<div class="game__rules">
 					<h1 class="game__title">Lucky 9 Card Game</h1>
+					<div class="game__rules">
 					<h4>Rules and Objectives:</h4>
 					<p>The objective of this game is to have a high total card value or closest to Nine as possible.
 						Cards A,2,3,4,5,6,7,8,9 are all counted according to their numerical value.
@@ -30,28 +30,25 @@
 		</header>
 		
 		<main class="the__game flex">
-		<div class="game__result">
+		<div class="game__result flex">
 			<button>Deal Cards!</button>
 			<h3></h3>
 		</div>
 		<div class="player1">
-			<h2>Player 1</h2>
+			<h2 class="score1">Player 1</h2>
 			<img id="player1Card1"src="" alt="Card 1">
 			<img id="player1Card2"src="" alt="Card 2">
-			<p class="score1"></p>
 		</div>
 		
 		<div class="player2">
-			<h2>Player 2</h2>
+			<h2 class="score2">Player 2</h2>
 			<img id="player2Card1" src="" alt="Card 1">
 			<img id="player2Card2" src="" alt="Card 2">
-			<p class="score2"></p>
 		</div>
-		
 		</main>
 
-		<footer>
-			<p>Credits to Cards API</p>
+		<footer class="flex">
+			<p>Credits to <a href="https://www.deckofcardsapi.com/">Deck Of Cards API</a></p>
 		</footer>
 	<script type="text/javascript" src="main.js"></script>
 </body>

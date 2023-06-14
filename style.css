@@ -8,18 +8,23 @@
 
 header{
     line-height: 1;
-    background-color: rgb(91, 221, 91);
+    background-color: green;
     color: white;
     padding: 40px;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .img__cont{
-    border: 1px solid black;
-    min-width: 600px;
-    min-height: 300px;
+    max-width: 700px;
+    max-height: 500px;
+}
+
+.img__cont img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .game{
@@ -27,38 +32,66 @@ header{
 }
 
 .game__title{
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
+    text-shadow: 2px 4px 4px black;
 }
 
 .game__rules h4{
-    font-size: 30px;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black;
 }
 
 .game__rules p{
-    font-size: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
 }
 
 .the__game{
     background-color: rgb(224, 241, 224);
-    flex-wrap: wrap;
+    padding: 20px 0;
     align-items: flex-start;
     justify-content: space-evenly;
+    min-height: 450px;
 }
 
 .the__game button{
     background-color: rgb(18, 109, 18);
     color: white;
-    
+    padding: 20px;
 }
 
-@media only screen and (max-width:1000px){
+.game__result{
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__result h3{
+    font-size: 30px;
+    color: red;
+}
+
+footer{
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: green;
+}
+
+footer a{
+    color: white;
+}
+
+@media only screen and (max-width:800px){
     header{
         flex-direction: column;
     }
 
     .img__cont{
-        min-width: 300px;
+        min-width: 400px;
+        align-self: center;
     }
 
     .game__title{
@@ -80,9 +113,13 @@ header{
     }
 
     .img__cont{
-        max-width: 400px;
+        min-width: 50px;
+        align-self: flex-start;
     }
 
+    .img__cont img{
+        width: 100%;
+    }
     .game__title{
         font-size: 30px;
         text-align: center;
@@ -94,6 +131,11 @@ header{
 
     .game__rules p{
         font-size: 15px;
+    }
+
+    .the__game{
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     #player1Card1, #player1Card2, #player2Card1, #player2Card2{
