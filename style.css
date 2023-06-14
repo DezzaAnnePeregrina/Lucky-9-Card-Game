@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+header{
+    width: 100%;
+    line-height: 1;
+    background-color: rgb(91, 221, 91);
+    color: white;
+    padding: 40px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.img__cont{
+    border: 1px solid black;
+    min-width: 600px;
+    min-height: 300px;
+}
+
+.game{
+    flex-wrap: wrap;
+}
+
+.game__title{
+    font-size: 80px;
+    text-align: center;
+}
+
+.game__rules h4{
+    font-size: 30px;
+}
+
+.game__rules p{
+    font-size: 20px;
+}
+
+.the__game{
+    background-color: rgb(224, 241, 224);
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.the__game button{
+    background-color: rgb(18, 109, 18);
+    color: white;
+    
+}
+
+@media(max-width:1000px){
+    header{
+        flex-direction: column;
+    }
+
+    .img__cont{
+        min-width: 300px;
+        max-width: 700px;
+    }
+
+    .game__title{
+        font-size: 60px;
+        text-align: center;
+    }
+}

@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
-
-		<title>Title in the tab</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<title>Title in the tab</title>
 
 		<!-- external CSS link -->
-		<!-- <link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css"> -->
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<header>
-			<h1>Lucky 9 Card Game</h1>
-			<div>
-				<h4>Rules and Objectives:</h4>
-				<p>The objective of this game is to have a high total card value or closest to Nine as possible.
-					Cards A,2,3,4,5,6,7,8,9 are all counted according to their numerical value.
-					Cards 10, Jack, Queen, and King have no value.
-					For example: 8 + 5 = 13 which counts as 3
-				</p>
+		<header class="flex">
+			<div class="img__cont"><img src="" alt="UI photo"></div>
+			
+			<div class="game flex">
+				<div class="game__rules">
+					<h1 class="game__title">Lucky 9 Card Game</h1>
+					<h4>Rules and Objectives:</h4>
+					<p>The objective of this game is to have a high total card value or closest to Nine as possible.
+						Cards A,2,3,4,5,6,7,8,9 are all counted according to their numerical value.
+						Cards 10, Jack, Queen, and King have no value.
+						For example: 8 + 5 = 13 will be counted as 3
+					</p>
+				</div>
 			</div>
 		</header>
 		
+		<main class="the__game flex">
 		<button>Deal Cards!</button>
-		<h2>Player 1</h2>
-		<img id="player1Card1"src="" alt="playing card">
-		<img id="player1Card2"src="" alt="playing card">
-		<p class="score1"></p>
-		<h2>Player 2</h2>
-		<img id="player2Card1" src="" alt="playing card">
-		<img id="player2Card2" src="" alt="playing card">
-		<p class="score2"></p>
+		<div class="player1">
+			<h2>Player 1</h2>
+			<img id="player1Card1"src="" alt="playing card">
+			<img id="player1Card2"src="" alt="playing card">
+			<p class="score1"></p>
+		</div>
+		
+		<div class="player2">
+			<h2>Player 2</h2>
+			<img id="player2Card1" src="" alt="playing card">
+			<img id="player2Card2" src="" alt="playing card">
+			<p class="score2"></p>
+		</div>
+		
 
-		<h3>Result</h3>
+		<div class="game__result">
+			<h3>Result</h3>
+		</div>
+		</main>
 
-		<script type="text/javascript" src="main.js"></script>
-	</body>
+		<footer>
+			<p>Credits to Cards API</p>
+		</footer>
+	<script type="text/javascript" src="main.js"></script>
+</body>
 </html>
