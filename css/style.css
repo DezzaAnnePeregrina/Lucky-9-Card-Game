@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+    min-height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.card
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    box-shadow: 3px 5px 10px gray;
+}
+
+header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: lightgreen;
+    gap: 20px;
+}
+
+.game{
+    flex-wrap: wrap;
+}
+
+.game__title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.the__game{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+.the__game button{
+    background-color: rgb(45, 151, 45);
+    color: white;
+    padding: 10px;
+}
+
+.game__result{
+    gap: 30px;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.game__result h3{
+    font-size: 30px;
+    color: red;
+}
+
+#player1Card1, #player1Card2, #player2Card1, #player2Card2{
+    min-width: 50px;
+    max-width: 120px;
+    min-height: 90px;
+    max-height: 190px;
+    box-shadow: 3px 2px 4px gray;
+    border-radius: 5px;
+}
+@media only screen and (max-width:600px){
+    .the__game{
+        margin: 20px;
+    }
+    
+}

@@ -43,7 +43,7 @@ function drawTwo(){
           document.querySelector('.score1').innerText = `Player 1 got ${player1val}`
           document.querySelector('.score2').innerText = `Player 2 got ${player2val}`
         } else{
-          document.querySelector('h3').innerText = 'War!!!!!!'
+          document.querySelector('h3').innerText = 'War Begins!'
           document.querySelector('.score1').innerText = `Player 1 got ${player1val}`
           document.querySelector('.score2').innerText = `Player 2 got ${player2val}`
         }

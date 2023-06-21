@@ -3,30 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<title>Title in the tab</title>
-
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="normalize.css">
-		<link rel="stylesheet" href="style.css">
+	<title>Card Game</title>
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/style.css">
 	</head>
 	<body>
+		<div class="card flex">
 		<header class="flex">
-			<div class="img__cont"><img src="/dylan-clifton-wFln-loyVxY-unsplash.jpg" alt="UI photo"></div>
-			
-			<div class="game flex">
-					<h1 class="game__title">Lucky 9 Card Game</h1>
-					<div class="game__rules">
-					<h4>Rules and Objectives:</h4>
-					<p>The objective of this game is to have a high total card value or closest to Nine as possible.
-						Cards A,2,3,4,5,6,7,8,9 are all counted according to their numerical value.
-						Cards 10, Jack, Queen, and King have no value.
-						For example: 8 + 5 = 13 will be counted as 3
-					</p>
-				</div>
-			</div>
+			<h1 class="game__title">Lucky 9 Card Game</h1>
+			<p>The objective of this game is to have a high total card value or closest to Nine as possible.
+				Cards A,2,3,4,5,6,7,8,9 are all counted according to their numerical value.
+				Cards 10, Jack, Queen, and King have no value.
+				For example: 8 + 5 = 13 will be counted as 3
+			</p>
 		</header>
 		
 		<main class="the__game flex">
@@ -36,20 +27,18 @@
 		</div>
 		<div class="player1">
 			<h2 class="score1">Player 1</h2>
-			<img id="player1Card1"src="" alt="Card 1">
-			<img id="player1Card2"src="" alt="Card 2">
+			<img id="player1Card1" src="/images/card.jpg" alt="Card 1">
+			<img id="player1Card2" src="/images/card.jpg" alt="Card 2">
 		</div>
 		
 		<div class="player2">
 			<h2 class="score2">Player 2</h2>
-			<img id="player2Card1" src="" alt="Card 1">
-			<img id="player2Card2" src="" alt="Card 2">
+			<img id="player2Card1" src="/images/card.jpg" alt="Card 1">
+			<img id="player2Card2" src="/images/card.jpg" alt="Card 2">
 		</div>
 		</main>
 
-		<footer class="flex">
-			<p>Credits to <a href="https://www.deckofcardsapi.com/">Deck Of Cards API</a></p>
-		</footer>
+	</div>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
